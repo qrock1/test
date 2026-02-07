@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Дашборд — ArbiX</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="theme-dark">
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">ArbiX</a>
+      <nav class="nav">
+        <a href="dashboard.html">Дашборд</a>
+        <a href="exchange.html">Сравнение</a>
+        <a href="automation.html">Автоматизация</a>
+        <a href="nft.html">NFT-порталы</a>
+      </nav>
+      <div class="header__actions">
+        <button class="chip">Trader</button>
+        <a class="btn btn--ghost" href="profile.html">Профиль</a>
+      </div>
+      <button class="burger" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Добро пожаловать, Анна</h1>
+        <p>Общий обзор портфеля и активной автоматизации.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid grid--3">
+          <div class="card">
+            <p class="muted">Общий баланс</p>
+            <h3>$126,540</h3>
+            <small class="up">+3.8% за 24ч</small>
+          </div>
+          <div class="card">
+            <p class="muted">Подключённые биржи</p>
+            <h3>4</h3>
+            <small>Binance, Bybit, OKX, MEXC</small>
+          </div>
+          <div class="card">
+            <p class="muted">Активные боты</p>
+            <h3>6</h3>
+            <small class="up">2 новых сигнала</small>
+          </div>
+        </div>
+
+        <div class="grid grid--3" style="margin-top: 20px;">
+          <div class="card">
+            <h4>Быстрые действия</h4>
+            <p class="muted">Перейдите к ключевым инструментам.</p>
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="exchange.html">Сравнить</a>
+              <a class="btn btn--ghost" href="automation.html">Создать бот</a>
+            </div>
+          </div>
+          <div class="card">
+            <h4>Последние операции</h4>
+            <ul class="list">
+              <li>Binance → OKX · +0.42%</li>
+              <li>Обновление P2P оффера · 2 мин назад</li>
+              <li>Подключена биржа MEXC · 1 ч назад</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h4>Сигналы</h4>
+            <p class="accent">3 арбитражных сигнала</p>
+            <small>Среднее время реакции 48 сек</small>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

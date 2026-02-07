@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Dashboard — ArbiX</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="theme-dark">
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">ArbiX Admin</a>
+      <nav class="nav">
+        <a href="admin.html">Сводка</a>
+        <a href="#">Пользователи</a>
+        <a href="#">Контент</a>
+        <a href="#">Настройки</a>
+      </nav>
+      <div class="header__actions">
+        <button class="chip">Admin</button>
+      </div>
+      <button class="burger" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Админ-панель</h1>
+        <p>Контроль метрик, пользователей и статуса системы.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid grid--3" style="margin-bottom: 20px;">
+          <div class="card">
+            <p class="muted">Пользователи</p>
+            <h3>12,540</h3>
+            <small class="up">+240 за сутки</small>
+          </div>
+          <div class="card">
+            <p class="muted">Активные боты</p>
+            <h3>1,420</h3>
+            <small class="up">98% в работе</small>
+          </div>
+          <div class="card">
+            <p class="muted">Состояние API</p>
+            <h3>Все системы</h3>
+            <small class="up">OK</small>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Пользователи</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Имя</th>
+                <th>Email</th>
+                <th>Роль</th>
+                <th>Статус</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Anna Petrova</td>
+                <td>anna@arbix.io</td>
+                <td>Trader</td>
+                <td class="up">Active</td>
+              </tr>
+              <tr>
+                <td>Ivan Smirnov</td>
+                <td>ivan@arbix.io</td>
+                <td>Admin</td>
+                <td class="up">Active</td>
+              </tr>
+              <tr>
+                <td>Olga Ivanova</td>
+                <td>olga@arbix.io</td>
+                <td>Trader</td>
+                <td class="down">Suspended</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

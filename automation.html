@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Автоматизация — ArbiX</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="theme-dark">
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">ArbiX</a>
+      <nav class="nav">
+        <a href="dashboard.html">Дашборд</a>
+        <a href="exchange.html">Сравнение</a>
+        <a href="automation.html">Автоматизация</a>
+        <a href="nft.html">NFT-порталы</a>
+      </nav>
+      <div class="header__actions">
+        <a class="btn btn--ghost" href="settings.html">Настройки</a>
+        <a class="btn btn--primary" href="#">Создать бота</a>
+      </div>
+      <button class="burger" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>P2P-автоматизация</h1>
+        <p>Настройте ботов, которые обновляют ваши офферы по рынку.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="card" style="margin-bottom: 24px;">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Бот</th>
+                <th>Платформа</th>
+                <th>Пара</th>
+                <th>Статус</th>
+                <th>Действия</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>USDT-Market-01</td>
+                <td>Binance P2P</td>
+                <td>USDT/USD</td>
+                <td class="up">Активен</td>
+                <td><a class="btn btn--ghost" href="#">Пауза</a></td>
+              </tr>
+              <tr>
+                <td>RUB-Spread</td>
+                <td>Bybit P2P</td>
+                <td>USDT/RUB</td>
+                <td class="down">Пауза</td>
+                <td><a class="btn btn--ghost" href="#">Запустить</a></td>
+              </tr>
+              <tr>
+                <td>Auto-Competitive</td>
+                <td>OKX P2P</td>
+                <td>USDT/EUR</td>
+                <td class="up">Активен</td>
+                <td><a class="btn btn--ghost" href="#">Пауза</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="split">
+          <div>
+            <h2>Новый бот</h2>
+            <p class="muted">Настройте стратегию в 2 шага и включите автообновление.</p>
+            <form class="form">
+              <input class="input" placeholder="Название бота" />
+              <select class="select">
+                <option>Binance P2P</option>
+                <option>Bybit P2P</option>
+                <option>OKX P2P</option>
+              </select>
+              <div class="grid grid--3">
+                <input class="input" placeholder="Актив (USDT)" />
+                <input class="input" placeholder="Фиат (RUB)" />
+                <input class="input" placeholder="Маржа %" />
+              </div>
+              <button class="btn btn--primary" type="button">Сохранить и запустить</button>
+            </form>
+          </div>
+          <div class="card">
+            <h3>Последние действия</h3>
+            <ul class="list">
+              <li>12:04 · Цена обновлена на 0.4%</li>
+              <li>12:02 · Оффер активирован</li>
+              <li>11:56 · Закрыта сделка 1,200 USDT</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

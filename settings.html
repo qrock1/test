@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Настройки — ArbiX</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="theme-dark">
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">ArbiX</a>
+      <nav class="nav">
+        <a href="dashboard.html">Дашборд</a>
+        <a href="settings.html">Настройки</a>
+        <a href="help.html">Помощь</a>
+      </nav>
+      <div class="header__actions">
+        <button class="chip">EN / RU</button>
+      </div>
+      <button class="burger" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Настройки</h1>
+        <p>Подключения бирж, уведомления и предпочтения интерфейса.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid--3">
+        <div class="card">
+          <h3>Биржи</h3>
+          <ul class="list">
+            <li>Binance · подключено</li>
+            <li>Bybit · подключено</li>
+            <li>OKX · требуется ключ</li>
+          </ul>
+          <button class="btn btn--primary" type="button">Добавить биржу</button>
+        </div>
+        <div class="card">
+          <h3>Уведомления</h3>
+          <form class="form">
+            <label class="muted"><input type="checkbox" checked /> Оповещения о сделках</label>
+            <label class="muted"><input type="checkbox" /> Новости платформы</label>
+            <label class="muted"><input type="checkbox" checked /> Сигналы арбитража</label>
+          </form>
+        </div>
+        <div class="card">
+          <h3>Предпочтения</h3>
+          <form class="form">
+            <label class="muted">Язык</label>
+            <select class="select">
+              <option>Русский</option>
+              <option>English</option>
+            </select>
+            <label class="muted">Часовой пояс</label>
+            <select class="select">
+              <option>Europe/Moscow</option>
+              <option>UTC</option>
+            </select>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
