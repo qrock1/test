@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Help Center — ArbiX</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="theme-dark">
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">ArbiX</a>
+      <nav class="nav">
+        <a href="help.html">Помощь</a>
+        <a href="dashboard.html">Дашборд</a>
+        <a href="settings.html">Настройки</a>
+      </nav>
+      <div class="header__actions">
+        <a class="btn btn--ghost" href="login.html">Войти</a>
+      </div>
+      <button class="burger" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Help Center</h1>
+        <p>Найдите ответы на частые вопросы или свяжитесь с поддержкой.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="card" style="margin-bottom: 20px;">
+          <input class="input" placeholder="Как мы можем помочь?" />
+        </div>
+        <div class="grid grid--3">
+          <div class="card">
+            <h3>Старт</h3>
+            <p class="muted">Создание аккаунта, подключение бирж.</p>
+          </div>
+          <div class="card">
+            <h3>Автоматизация</h3>
+            <p class="muted">Боты, P2P офферы и стратегии.</p>
+          </div>
+          <div class="card">
+            <h3>NFT-порталы</h3>
+            <p class="muted">Доступ в закрытые комьюнити.</p>
+          </div>
+        </div>
+
+        <div class="accordion" style="margin-top: 20px;">
+          <details open>
+            <summary>Как подключить Binance?</summary>
+            <p>Откройте Настройки → Биржи, добавьте API ключи.</p>
+          </details>
+          <details>
+            <summary>Где посмотреть арбитражные сигналы?</summary>
+            <p>В дашборде и на странице сравнения курсов.</p>
+          </details>
+          <details>
+            <summary>Как связаться с поддержкой?</summary>
+            <p>Напишите на support@arbix.io или используйте форму обратной связи.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

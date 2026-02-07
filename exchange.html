@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Сравнение курсов — ArbiX</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="theme-dark">
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">ArbiX</a>
+      <nav class="nav">
+        <a href="exchange.html">Сравнение</a>
+        <a href="dashboard.html">Дашборд</a>
+        <a href="automation.html">Автоматизация</a>
+        <a href="nft.html">NFT-порталы</a>
+      </nav>
+      <div class="header__actions">
+        <button class="chip">BTC/USDT</button>
+        <a class="btn btn--ghost" href="settings.html">Настройки</a>
+      </div>
+      <button class="burger" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Сравнение курсов</h1>
+        <p>Сводная таблица цен по ключевым биржам и индикатор арбитража.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid grid--3" style="margin-bottom: 20px;">
+          <div class="card">
+            <p class="muted">Выбранная пара</p>
+            <h3>BTC/USDT</h3>
+            <small class="up">Обновление каждые 5 сек</small>
+          </div>
+          <div class="card">
+            <p class="muted">Арбитражный разрыв</p>
+            <h3 class="accent">0.33%</h3>
+            <small>Binance → OKX</small>
+          </div>
+          <div class="card">
+            <p class="muted">Доступный баланс</p>
+            <h3>$42,800</h3>
+            <small class="down">Требуется пополнение на MEXC</small>
+          </div>
+        </div>
+
+        <div class="card">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Биржа</th>
+                <th>Цена</th>
+                <th>Спред</th>
+                <th>Объём 24ч</th>
+                <th>Действие</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Binance</td>
+                <td>$63,420</td>
+                <td class="up">+0.42%</td>
+                <td>$1.8B</td>
+                <td><a class="btn btn--ghost" href="#">Торговать</a></td>
+              </tr>
+              <tr>
+                <td>Bybit</td>
+                <td>$63,388</td>
+                <td class="down">-0.22%</td>
+                <td>$1.1B</td>
+                <td><a class="btn btn--ghost" href="#">Перевод</a></td>
+              </tr>
+              <tr>
+                <td>OKX</td>
+                <td>$63,510</td>
+                <td class="up">+0.58%</td>
+                <td>$980M</td>
+                <td><a class="btn btn--ghost" href="#">Торговать</a></td>
+              </tr>
+              <tr>
+                <td>MEXC</td>
+                <td>$63,301</td>
+                <td class="down">-0.51%</td>
+                <td>$640M</td>
+                <td><a class="btn btn--ghost" href="#">Перевод</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

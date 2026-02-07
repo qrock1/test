@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NFT-порталы — ArbiX</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="theme-dark">
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">ArbiX</a>
+      <nav class="nav">
+        <a href="dashboard.html">Дашборд</a>
+        <a href="nft.html">NFT-порталы</a>
+        <a href="automation.html">Автоматизация</a>
+        <a href="help.html">Помощь</a>
+      </nav>
+      <div class="header__actions">
+        <a class="btn btn--primary" href="#">Подключить кошелёк</a>
+      </div>
+      <button class="burger" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>NFT-порталы</h1>
+        <p>Управляйте токен-гейтом Telegram и создавайте новые порталы.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid grid--3">
+          <div class="card">
+            <h3>CryptoBuilders Club</h3>
+            <p class="muted">Требуется NFT #1-100</p>
+            <small class="up">Активен · 842 участника</small>
+          </div>
+          <div class="card">
+            <h3>ArbiX Pro Traders</h3>
+            <p class="muted">≥ 2500 ARBX Token</p>
+            <small class="down">Ожидает бота</small>
+          </div>
+          <div class="card">
+            <h3>OKX P2P Lounge</h3>
+            <p class="muted">NFT "Gate Pass"</p>
+            <small class="up">Активен · 312 участников</small>
+          </div>
+        </div>
+
+        <div class="split" style="margin-top: 30px;">
+          <div>
+            <h2>Создать портал</h2>
+            <p class="muted">Добавьте группу и укажите NFT или токен для доступа.</p>
+            <form class="form">
+              <input class="input" placeholder="Telegram @group" />
+              <input class="input" placeholder="Адрес NFT контракта" />
+              <select class="select">
+                <option>Минимум 1 NFT</option>
+                <option>Минимум 1000 токенов</option>
+              </select>
+              <button class="btn btn--primary" type="button">Создать портал</button>
+            </form>
+          </div>
+          <div class="card">
+            <h3>Подсказки</h3>
+            <ul class="list">
+              <li>Добавьте нашего бота в Telegram-группу.</li>
+              <li>Проверьте доступность NFT в кошельке.</li>
+              <li>Поддержка WalletConnect в мобильной версии.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
