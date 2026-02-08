@@ -563,14 +563,52 @@ p {
 }
 
 .section--bridge {
-  background: linear-gradient(180deg, #0b0b0d 0%, #f5f5f7 70%);
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    #0b0b0d 0%,
+    #2b2b30 25%,
+    #6f6f75 45%,
+    #cfcfd4 70%,
+    #f5f5f7 100%
+  );
   padding-top: 120px;
   padding-bottom: 120px;
+  overflow: hidden;
+}
+
+.section--bridge::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 0%,
+    rgba(255, 255, 255, 0.18),
+    transparent 55%
+  );
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.section--bridge::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(11, 11, 13, 0.25) 0%,
+    rgba(11, 11, 13, 0) 35%,
+    rgba(245, 245, 247, 0.35) 85%,
+    rgba(245, 245, 247, 0.55) 100%
+  );
+  pointer-events: none;
 }
 
 .bridge {
   text-align: center;
   color: var(--light-text);
+  position: relative;
+  z-index: 1;
 }
 
 .bridge h2 {
