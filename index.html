@@ -34,12 +34,12 @@
           <p class="kicker">Rates • Automation • Telegram NFTs</p>
           <h1 class="hero__title">Best rate. Instantly.</h1>
           <p class="hero__subhead">
-            Compare Bybit, Binance, MEXC and more — then automate P2P repricing with
-            precision.
+            Compare every venue in real time. Automate P2P repricing with precision.
           </p>
+          <p class="hero__support">Supports: Bybit • Binance • MEXC • OKX • HTX</p>
           <div class="hero__cta">
             <button class="btn btn--primary">Get access</button>
-            <a class="btn btn--link" href="#product">View product</a>
+            <a class="btn btn--link" href="#product">Learn more</a>
           </div>
           <div class="hero__media">
             <div class="dashboard">
@@ -81,57 +81,71 @@
           <div class="bento">
             <article class="card card--wide reveal">
               <h3>Live rates. No noise.</h3>
-              <p>Instant spreads across venues with a single source of truth.</p>
+              <p>Instant spreads across venues.</p>
+              <div class="card__visual sparkline" aria-hidden="true"></div>
               <div class="card__mini">Bybit • Binance • MEXC</div>
             </article>
             <article class="card reveal">
               <h3>Best route, calculated.</h3>
-              <p>Fees, limits, and speed baked into every recommendation.</p>
+              <p>Fees, limits, speed included.</p>
+              <div class="card__visual route" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
               <div class="card__mini">Route engine</div>
             </article>
             <article class="card reveal">
               <h3>P2P repricing, automated.</h3>
-              <p>Rules with guardrails, schedules, and cooldowns.</p>
+              <p>Rules with guardrails and schedules.</p>
+              <div class="card__visual chips" aria-hidden="true">
+                <span>Min</span><span>Max</span><span>Step</span>
+              </div>
               <div class="card__mini">Auto rules</div>
             </article>
             <article class="card reveal">
               <h3>Connect your token.</h3>
-              <p>Permission-based connectors with read-only defaults.</p>
+              <p>Permissioned connectors with defaults.</p>
+              <div class="card__visual token" aria-hidden="true">ARB</div>
               <div class="card__mini">Token connectors</div>
             </article>
             <article class="card reveal">
               <h3>Telegram NFT ops.</h3>
-              <p>Portals and tunnels monitored in one control panel.</p>
+              <p>Portals and tunnels, unified.</p>
+              <div class="card__visual status" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
               <div class="card__mini">Ops center</div>
             </article>
             <article class="card reveal">
               <h3>Audit trail, built in.</h3>
-              <p>Every action logged for compliance and clarity.</p>
+              <p>Every action logged.</p>
+              <div class="card__visual log" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
               <div class="card__mini">Audit log</div>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section section--dark sticky" id="rates">
+      <section class="section section--dark sticky" id="rates" data-active="1">
         <div class="container sticky__grid">
           <div class="sticky__copy">
-            <div class="story-step is-active reveal">
+            <div class="story-step is-active reveal" data-step="1">
               <p class="kicker">Chapter 1</p>
               <h2>See every rate in one place.</h2>
               <p>Clean, real-time, no noise. Focus on what matters.</p>
             </div>
-            <div class="story-step reveal">
+            <div class="story-step reveal" data-step="2">
               <p class="kicker">Chapter 2</p>
               <h2>Pick the best route.</h2>
               <p>Smart detection of the most выгодный путь.</p>
             </div>
-            <div class="story-step reveal" id="automation">
+            <div class="story-step reveal" id="automation" data-step="3">
               <p class="kicker">Chapter 3</p>
               <h2>Automate P2P adjustments.</h2>
               <p>Rules that keep you competitive — automatically.</p>
             </div>
-            <div class="story-step reveal" id="telegram">
+            <div class="story-step reveal" id="telegram" data-step="4">
               <p class="kicker">Chapter 4</p>
               <h2>Operate Telegram NFT exchanges.</h2>
               <p>Unified control for portals, tunnels, and queues.</p>
@@ -140,7 +154,7 @@
           <div class="sticky__media">
             <div class="spotlight">
               <div class="spotlight__layer"></div>
-              <div class="spotlight__panel">
+              <div class="spotlight__panel" data-step="1">
                 <h3>Live rates dashboard</h3>
                 <p>Top venues updated in under a second.</p>
                 <div class="spotlight__list">
@@ -155,6 +169,60 @@
                   <div>
                     <span>MEXC</span>
                     <span>0.24%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="spotlight__panel" data-step="2">
+                <h3>Route intelligence</h3>
+                <p>All fees and limits accounted for.</p>
+                <div class="spotlight__list">
+                  <div>
+                    <span>Best path</span>
+                    <span>USDT → BTC</span>
+                  </div>
+                  <div>
+                    <span>Est. gain</span>
+                    <span>+0.41%</span>
+                  </div>
+                  <div>
+                    <span>Latency</span>
+                    <span>380ms</span>
+                  </div>
+                </div>
+              </div>
+              <div class="spotlight__panel" data-step="3">
+                <h3>P2P automation</h3>
+                <p>Rules with guardrails and cooldowns.</p>
+                <div class="spotlight__list">
+                  <div>
+                    <span>Spread &gt; 0.6%</span>
+                    <span>Adjust -0.2%</span>
+                  </div>
+                  <div>
+                    <span>Budget cap</span>
+                    <span>$15k</span>
+                  </div>
+                  <div>
+                    <span>Cooldown</span>
+                    <span>8 min</span>
+                  </div>
+                </div>
+              </div>
+              <div class="spotlight__panel" data-step="4">
+                <h3>Telegram NFT ops</h3>
+                <p>Portals, tunnels, queues in sync.</p>
+                <div class="spotlight__list">
+                  <div>
+                    <span>Portals</span>
+                    <span>12 active</span>
+                  </div>
+                  <div>
+                    <span>Queue health</span>
+                    <span>Stable</span>
+                  </div>
+                  <div>
+                    <span>Moderation</span>
+                    <span>Auto</span>
                   </div>
                 </div>
               </div>
@@ -194,7 +262,7 @@
           <div class="pricing">
             <article class="card card--light reveal">
               <h3>Starter</h3>
-              <p class="price">$49<span>/mo</span></p>
+              <p class="price">$49 / mo</p>
               <ul>
                 <li>5 venues monitored</li>
                 <li>Live rate dashboard</li>
@@ -204,7 +272,7 @@
             </article>
             <article class="card card--light card--featured reveal">
               <h3>Pro</h3>
-              <p class="price">$199<span>/mo</span></p>
+              <p class="price">$199 / mo</p>
               <ul>
                 <li>20+ venues monitored</li>
                 <li>Advanced route engine</li>
@@ -214,7 +282,7 @@
             </article>
             <article class="card card--light reveal">
               <h3>Team</h3>
-              <p class="price">$499<span>/mo</span></p>
+              <p class="price">$499 / mo</p>
               <ul>
                 <li>Unlimited venues</li>
                 <li>Team permissions + audit</li>
@@ -247,6 +315,15 @@
               <p>All adjustments, rules, and actions are logged.</p>
             </div>
           </div>
+          <div class="security__details reveal">
+            <span>Read-only where possible</span>
+            <span>Key rotation</span>
+            <span>Approval flows</span>
+            <span>Audit log export</span>
+          </div>
+          <p class="security__note reveal">
+            Security posture is reviewed quarterly with automated key rotation policies.
+          </p>
           <div class="security__cta reveal">
             <button class="btn btn--primary">Read security</button>
             <a class="btn btn--link" href="#">View API docs</a>

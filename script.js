@@ -14,6 +14,7 @@ const revealObserver = new IntersectionObserver(
 reveals.forEach((el) => revealObserver.observe(el));
 
 const steps = document.querySelectorAll(".story-step");
+const stickySection = document.querySelector(".sticky");
 
 const stepObserver = new IntersectionObserver(
   (entries) => {
@@ -21,6 +22,9 @@ const stepObserver = new IntersectionObserver(
       if (entry.isIntersecting) {
         steps.forEach((step) => step.classList.remove("is-active"));
         entry.target.classList.add("is-active");
+        if (stickySection) {
+          stickySection.dataset.active = entry.target.dataset.step;
+        }
       }
     });
   },
