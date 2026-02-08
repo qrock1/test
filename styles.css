@@ -62,6 +62,22 @@ ul {
 .section--hero {
   background: radial-gradient(circle at top, #16161d 0%, var(--dark-bg) 48%);
   padding-top: 180px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__backdrop {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+      circle at 50% 20%,
+      rgba(10, 132, 255, 0.18),
+      transparent 55%
+    ),
+    radial-gradient(circle at 50% 10%, rgba(0, 0, 0, 0.1), transparent 60%);
+  mask-image: radial-gradient(circle at 50% 20%, black 45%, transparent 75%);
+  z-index: 0;
 }
 
 .kicker {
@@ -162,6 +178,8 @@ p {
 
 .hero {
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .hero__subhead {
@@ -187,6 +205,15 @@ p {
 .hero__media {
   display: flex;
   justify-content: center;
+}
+
+.device-frame {
+  padding: 18px;
+  border-radius: 36px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.14);
+  width: min(1120px, 90vw);
 }
 
 .dashboard {
@@ -226,6 +253,25 @@ p {
   background: rgba(255, 255, 255, 0.02);
 }
 
+.pill.is-live {
+  position: relative;
+  overflow: hidden;
+}
+
+.pill.is-live::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(10, 132, 255, 0.35) 50%,
+    transparent 100%
+  );
+  transform: translateX(-100%);
+  animation: shimmer 4s ease-in-out infinite;
+}
+
 .dashboard__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -239,6 +285,8 @@ p {
   border-radius: 16px;
   border: 1px solid var(--dark-stroke);
   background: rgba(0, 0, 0, 0.35);
+  position: relative;
+  overflow: hidden;
 }
 
 .metric__label {
@@ -249,6 +297,22 @@ p {
 .metric__value {
   margin-top: 6px;
   font-weight: 600;
+}
+
+.metric__value--drift {
+  animation: drift 6s ease-in-out infinite;
+}
+
+.metric--highlight::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  border: 1px solid rgba(10, 132, 255, 0.4);
+  box-shadow: 0 0 18px rgba(10, 132, 255, 0.35);
+  opacity: 0.6;
+  pointer-events: none;
+  animation: pulse 4s ease-in-out infinite;
 }
 
 .section__header {
@@ -485,6 +549,42 @@ p {
   margin-bottom: 8px;
 }
 
+.method-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.method-card {
+  border: 1px solid var(--dark-stroke);
+  border-radius: 20px;
+  padding: 28px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.section--bridge {
+  background: linear-gradient(180deg, #0b0b0d 0%, #f5f5f7 70%);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.bridge {
+  text-align: center;
+  color: var(--light-text);
+}
+
+.bridge h2 {
+  margin-bottom: 24px;
+}
+
+.bridge__points {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  font-size: 0.95rem;
+  color: var(--light-muted);
+}
+
 .section--light .kicker,
 .section--light .section__subhead,
 .section--light p {
@@ -538,6 +638,32 @@ p {
   box-shadow: none;
 }
 
+.compare {
+  margin-top: 48px;
+  display: grid;
+  gap: 24px;
+}
+
+.compare__table {
+  border-top: 1px solid var(--light-stroke);
+  display: grid;
+  gap: 12px;
+}
+
+.compare__row {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--light-stroke);
+  font-size: 0.95rem;
+  color: var(--light-text);
+}
+
+.compare__row span:not(:first-child) {
+  color: var(--light-muted);
+}
+
 .security {
   display: grid;
   gap: 32px;
@@ -573,6 +699,38 @@ p {
 .security__note {
   font-size: 0.85rem;
   color: var(--light-muted);
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
 }
 
 .footer {
@@ -625,6 +783,15 @@ p {
 
   .card--wide {
     grid-column: span 1;
+  }
+
+  .bridge__points {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .compare__row {
+    grid-template-columns: 1fr;
   }
 }
 

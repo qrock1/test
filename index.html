@@ -30,6 +30,7 @@
 
     <main>
       <section class="section section--hero section--dark">
+        <div class="hero__backdrop"></div>
         <div class="container hero">
           <p class="kicker">Rates • Automation • Telegram NFTs</p>
           <h1 class="hero__title">Best rate. Instantly.</h1>
@@ -42,28 +43,30 @@
             <a class="btn btn--link" href="#product">Learn more</a>
           </div>
           <div class="hero__media">
-            <div class="dashboard">
-              <div class="dashboard__glow"></div>
-              <div class="dashboard__header">
-                <span>Live rates</span>
-                <span class="pill">Update ≤ 1s</span>
-              </div>
-              <div class="dashboard__grid">
-                <div class="metric">
-                  <p class="metric__label">Best spread</p>
-                  <p class="metric__value">0.18%</p>
+            <div class="device-frame">
+              <div class="dashboard">
+                <div class="dashboard__glow"></div>
+                <div class="dashboard__header">
+                  <span>Live rates</span>
+                  <span class="pill is-live">Update ≤ 1s</span>
                 </div>
-                <div class="metric">
-                  <p class="metric__label">Top route</p>
-                  <p class="metric__value">USDT → BTC → ETH</p>
-                </div>
-                <div class="metric">
-                  <p class="metric__label">P2P repricing</p>
-                  <p class="metric__value">Auto / Guarded</p>
-                </div>
-                <div class="metric">
-                  <p class="metric__label">Telegram ops</p>
-                  <p class="metric__value">12 portals active</p>
+                <div class="dashboard__grid">
+                  <div class="metric">
+                    <p class="metric__label">Best spread</p>
+                    <p class="metric__value metric__value--drift">0.18%</p>
+                  </div>
+                  <div class="metric metric--highlight">
+                    <p class="metric__label">Top route</p>
+                    <p class="metric__value">USDT → BTC → ETH</p>
+                  </div>
+                  <div class="metric">
+                    <p class="metric__label">P2P repricing</p>
+                    <p class="metric__value">Auto / Guarded</p>
+                  </div>
+                  <div class="metric">
+                    <p class="metric__label">Telegram ops</p>
+                    <p class="metric__value">12 portals active</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -252,6 +255,47 @@
         </div>
       </section>
 
+      <section class="section section--dark" id="method">
+        <div class="container">
+          <div class="section__header reveal">
+            <p class="kicker">Method & Trust</p>
+            <h2>Calculated. Not guessed.</h2>
+            <p class="section__subhead">
+              Transparent logic, engineered for precision and safety.
+            </p>
+          </div>
+          <div class="method-grid">
+            <article class="method-card reveal">
+              <h3>Fees included</h3>
+              <p>Maker/taker, network costs, and P2P spreads are accounted for.</p>
+            </article>
+            <article class="method-card reveal">
+              <h3>Limits respected</h3>
+              <p>Liquidity, inventory, and exchange constraints drive the route.</p>
+            </article>
+            <article class="method-card reveal">
+              <h3>Latency aware</h3>
+              <p>Confidence weighted by freshness and venue health.</p>
+            </article>
+            <article class="method-card reveal">
+              <h3>Audit-ready</h3>
+              <p>Every rule and adjustment is logged for review.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--bridge section--light">
+        <div class="container bridge">
+          <h2>Lightweight now. Scalable later.</h2>
+          <div class="bridge__points">
+            <span>Simple onboarding</span>
+            <span>Modular automation</span>
+            <span>Team-ready controls</span>
+          </div>
+        </div>
+      </section>
+
       <section class="section section--light" id="pricing">
         <div class="container">
           <div class="section__header reveal">
@@ -290,6 +334,41 @@
               </ul>
               <button class="btn btn--primary">Talk to sales</button>
             </article>
+          </div>
+          <div class="compare reveal">
+            <a class="btn btn--link" href="#">Compare plans</a>
+            <div class="compare__table">
+              <div class="compare__row">
+                <span>Venues monitored</span>
+                <span>5</span>
+                <span>20+</span>
+                <span>Unlimited</span>
+              </div>
+              <div class="compare__row">
+                <span>Route intelligence</span>
+                <span>Basic</span>
+                <span>Advanced</span>
+                <span>Advanced + custom</span>
+              </div>
+              <div class="compare__row">
+                <span>P2P automation</span>
+                <span>Core</span>
+                <span>Rules + alerts</span>
+                <span>Rules + simulation</span>
+              </div>
+              <div class="compare__row">
+                <span>Telegram NFT ops</span>
+                <span>—</span>
+                <span>Limited</span>
+                <span>Full access</span>
+              </div>
+              <div class="compare__row">
+                <span>Audit log export</span>
+                <span>—</span>
+                <span>CSV</span>
+                <span>CSV + API</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
